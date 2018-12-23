@@ -29,4 +29,5 @@ var fun = function lang(l) {
   return true;
 }
 ```
+Normal text
 $$x+y$$
