@@ -1,10 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site made with Mobirise Website Builder v2.10, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v2.10, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
 {% assign items = site.roles | sort: 'date' %}
 {% for role in items reversed %}
   <h2>{{ role.company }}</h2>
   <h3>{{ role.position }}</h3>
   <p>{{ role.content | markdownify }}</p>
 {% endfor %}
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/SmoothScroll.js"></script>
+<script src="assets/js/jarallax.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/timeline.js"></script>
+</body>
+</html>  
