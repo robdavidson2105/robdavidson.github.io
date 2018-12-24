@@ -4,3 +4,6 @@ markdown: kramdown
 theme: jekyll-theme-cayman
 title: RD
 description: Test description
+
+collections:
+  - roles
