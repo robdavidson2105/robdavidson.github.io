@@ -58,7 +58,7 @@
 				<h2>{{ role.position }} | {{ role.company }}</h2>
 				<p>{{ role.content | markdownify }}</p>
 				<!--a href="#0" class="cd-read-more">Read more</a-->
-				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;2016</span>
+				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;{{ role.date | date: "%d %y" }}</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 		{% endfor %}
