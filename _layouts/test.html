@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign items = site.roles | sort: 'date' %}
-{% for role in site.roles %}
+{% for role in items reversed %}
   <h2>{{ role.company }}</h2>
   <h3>{{ role.position }}</h3>
   <p>{{ role.content | markdownify }}</p>
