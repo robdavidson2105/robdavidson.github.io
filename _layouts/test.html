@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% assign items = site.roles | sort: 'date' %}
 {% for role in site.roles %}
   <h2>{{ role.company }}</h2>
   <h3>{{ role.position }}</h3>
