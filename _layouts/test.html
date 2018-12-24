@@ -49,78 +49,23 @@
 </section>
 <section class="mbr-section" id="cd-timeline-section">
 	<div class="cd-container" id="cd-timeline">
+		{% assign items = site.roles | sort: 'date' %}
+		{% for role in items reversed %}
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-pc"  style="background-image:url('assets/images/automation.png')">
 			</div> <!-- cd-timeline-img -->
-
 			<div class="cd-timeline-content">
-				<h2>Re-platform Technical Design Authority</h2>
-				<p>As Head of Strategic IT Change, Rob's role included governing the design of the company's insurance broking re-platform solution.   Rob was the chief architect during the IT solution delivery and managed the safe landing of a number of peripheral solutions to the main packaged application.</p><p>This included: the introduction of Robotic Process Automation (RPA) using software from Blue Prism; and the implementation of Real-Time Process Optimisation (RTPO) software from NICE Systems.</p>
-				<p>The combination of RPA and RTPO generated savings over £3m and removed reliance on 3rd party software suppliers for most application process changes.</p>
+				<h2>{{ role.position }}</h2>
+				<h3>{{ role.company }}</h3>
+				<p>{{ role.content | markdownify }}</p>
 				<!--a href="#0" class="cd-read-more">Read more</a-->
 				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;2016</span>
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
-		
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-agile" style="background-image:url('assets/images/agile.png')">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<!--a href="#0" class="cd-read-more">Read more</a-->
-				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;Jan 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-network" style="background-image:url('assets/images/network.png')">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<!--a href="#0" class="cd-read-more">Read more</a-->
-				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;Jan 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-		
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-servers" style="background-image:url('assets/images/servers.png')">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<!--a href="#0" class="cd-read-more">Read more</a-->
-				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;Jan 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-		
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-wan" style="background-image:url('assets/images/wan.png')">
-
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<!--a href="#0" class="cd-read-more">Read more</a-->
-				<span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;Jan 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+		{% endfor %}
 	</div>
 </section>
-{% assign items = site.roles | sort: 'date' %}
-{% for role in items reversed %}
-  <h2>{{ role.company }}</h2>
-  <h3>{{ role.position }}</h3>
-  <p>{{ role.content | markdownify }}</p>
-{% endfor %}
+
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
