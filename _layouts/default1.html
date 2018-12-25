@@ -44,7 +44,7 @@
                       {{ post.excerpt }}
                   </h3>
                 </a>
-                <p class="post-meta">Posted post.date | date_to_string</p>
+                <p class="post-meta">Posted {{ post.date | date_to_string }}</p>
               </div>
               <hr>
               {% endfor %}
