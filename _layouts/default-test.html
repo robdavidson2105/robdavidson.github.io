@@ -14,48 +14,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- Custom styles for this template -->
     <link href="/assets/css/clean-blog.min.css" rel="stylesheet">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     <title>Hello, world!</title>
   </head>
   <body>
-      <!-- Page Header -->
-      <header class="masthead" style="background-image: url('/assets/images/mountains-942x530-29.jpg')">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-              <div class="site-heading">
-                <h1>Blog template</h1>
-                <span class="subheading">A Blog Theme by Start Bootstrap</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                {% for post in site.posts %}
-              <div class="post-preview">
-                <a href="{{ post.url }}">
-                  <h2 class="post-title">
-                      {{ post.title }}
-                  </h2>
-                  <h3 class="post-subtitle">
-                      {{ post.excerpt }}
-                  </h3>
-                </a>
-                <p class="post-meta">Posted {{ post.date | date_to_string }}</p>
-              </div>
-              <hr>
-              {% endfor %}
-              <hr>
-              <!-- Pager -->
-              <div class="clearfix">
-                <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    {{ content }}    
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
