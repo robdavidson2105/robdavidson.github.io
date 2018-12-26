@@ -2,8 +2,8 @@
 company: Interactive Investor
 position: Head of Data
 date: 2018-05-01
-icon-style: cd-agile
-icon-image: automation.png
+icon-style: cd-cloud-cogs
+icon-image: cloudcogs.png
 ---
 Defining Data Strategy, technology solution, operating model, and execution plan to transform Interactive Investor's (ii) data capabilities.
 
