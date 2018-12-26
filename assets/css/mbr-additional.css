@@ -140,32 +140,26 @@ Main components
 .cd-network {
 	background: #aabbdd;
   background-size: 85%;
-  background-image: url('/assets/images/network.png');
 }
 .cd-servers {
 	background: #c5abde;
   background-size: 70%;
-  background-image:url('/assets/images/servers.png');
 }
 .cd-cloudcogs {
 	background: #abdcde;
   background-size: 85%;
-  background-image:url('/assets/images/cloudcogs.png');
 }
 .cd-firewall {
 	background: #deabb9;
   background-size: 75%;
-  background-image:url('assets/images/firewall.png');
 }
 .cd-agile {
 	background: #deabb9;
   background-size: 75%;
-  background-image:url('/assets/images/agile.png');
 }
 .cd-callcentre {
 	background: #ded4ab;
   background-size: 70%;
-  background-image:url('/assets/images/callcentre.png');
 }
 .cd-web {
 	background: #69c96c;
@@ -174,17 +168,14 @@ Main components
 .cd-citrix {
 	background: #dfdfe2;
   background-size: 75%;
-  background-image:url('/assets/images/citrix.png');
 }
 .cd-phone {
 	background: #dfdfe2;
   background-size: 70%;
-  background-image:url('/assets/images/phone.png');
 }
 .cd-wan {
 	background: #69c96c;
   background-size: 90%;
-  background-image:url('/assets/images/wan.png');
 }
 .cd-timeline-img {
 	position: absolute;
