@@ -52,7 +52,7 @@
 		{% assign items = site.roles | sort: 'date' %}
 		{% for role in items reversed %}
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img {{ role.icon-style }}">
+			<div class="cd-timeline-img {{ role.icon-style }}" style="background-image: url('/assets/images/{{ role.icon-image }}');">
 			</div> <!-- cd-timeline-img -->
 			<div class="cd-timeline-content">
 				<h2>{{ role.position }} | {{ role.company }}</h2>
