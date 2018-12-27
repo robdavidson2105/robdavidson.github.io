@@ -186,8 +186,8 @@ Manchester<br></p>
 
 <section class="mbr-section" id="cd-timeline-section">
     <div class="cd-container" id="cd-timeline">
-        {% assign items = site.qualifications | sort: 'date' %}
-        {% for qualification in items reversed %}
+        {% assign qualification_list = site.qualifications | sort: 'date' %}
+        {% for qualification in qualification_list reversed %}
         <div class="cd-timeline-block">
             <div class="cd-timeline-img {{ qualification.icon-style }}" style="background-image: url('/assets/images/{{ qualification.icon-image }}');">
             </div> <!-- cd-timeline-img -->
@@ -195,7 +195,7 @@ Manchester<br></p>
                 <h2>{{ qualification.title }}</h2>
                 <p>{{ qualification.content | markdownify }}</p>
                 <!--a href="#0" class="cd-read-more">Read more</a-->
-                <span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;{{ qualification.date | date: "%B %Y" }}</span>
+                <span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;{{ qualification.date | date: "%Y" }}</span>
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
         {% endfor %}
