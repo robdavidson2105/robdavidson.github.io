@@ -7,3 +7,4 @@ description: Test description
 
 collections:
   - roles
+  - qualifications
