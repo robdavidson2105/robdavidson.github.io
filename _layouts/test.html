@@ -154,6 +154,26 @@
     </div>
 </section>
 
+
+<section class="mbr-section" id="cd-timeline-section">
+    <div class="cd-container" id="cd-timeline">
+        {% assign qualification_list = site.qualifications | sort: 'date' %}
+        {% for qualification in qualification_list reversed %}
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img {{ qualification.icon-style }}" style="background-image: url('/assets/images/{{ qualification.icon-image }}');">
+            </div> <!-- cd-timeline-img -->
+            <div class="cd-timeline-content">
+                <h2>{{ qualification.title }}</h2>
+                <p>{{ qualification.content | markdownify }}</p>
+                <!--a href="#0" class="cd-read-more">Read more</a-->
+                <span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;{{ qualification.date | date: "%Y" }}</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+        {% endfor %}
+    </div>
+</section>
+
+
 <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="contacts1-5" style="background-color: rgb(60, 60, 60);">
     
     <div class="mbr-section__container container">
@@ -184,23 +204,6 @@ Manchester<br></p>
     </div>
 </section>
 
-<section class="mbr-section" id="cd-timeline-section">
-    <div class="cd-container" id="cd-timeline">
-        {% assign qualification_list = site.qualifications | sort: 'date' %}
-        {% for qualification in qualification_list reversed %}
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img {{ qualification.icon-style }}" style="background-image: url('/assets/images/{{ qualification.icon-image }}');">
-            </div> <!-- cd-timeline-img -->
-            <div class="cd-timeline-content">
-                <h2>{{ qualification.title }}</h2>
-                <p>{{ qualification.content | markdownify }}</p>
-                <!--a href="#0" class="cd-read-more">Read more</a-->
-                <span class="cd-date"><i class="fa fa-calendar"></i>&nbsp;{{ qualification.date | date: "%Y" }}</span>
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-        {% endfor %}
-    </div>
-</section>
 
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>

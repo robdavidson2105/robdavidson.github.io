@@ -2,7 +2,7 @@
 title: Various courses
 date: 2018-01-01
 icon-style: cd-servers
-icon-image: servers.png
+icon-image: cloudcogs.png
 ---
 [Cloud Analytics Practioner](https://verify.skilljar.com/c/w3imae6kwhig) (2018)
 
