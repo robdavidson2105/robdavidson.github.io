@@ -19,7 +19,7 @@ Andrew also includes how to use the Octave programming environment:  Octave is u
 
 ___
 
-![Powerpoint Slide](/assets/images/stanford1.png)
+![Powerpoint Slide](/assets/images/stanford1.png){:class="img-fluid"}
 
 **_Example course notes_**
 
