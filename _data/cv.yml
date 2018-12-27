@@ -1,8 +1,8 @@
-- introduction: >
+introduction: >
   Test content
   * for the 
   * main block
 
-- midsection: test midsection
+midsection: test midsection
 
-- footer: test footer
+footer: test footer
