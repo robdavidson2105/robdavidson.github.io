@@ -1,8 +1,17 @@
-introduction: |
+intro-1-title: title 1
+intro-1-content: |
  Test content
- * for the 
- * main block
+ * for 
+ * block 1
 
-midsection: test midsection
+intro-2-title: title 2
+intro-2-content: |
+ Test content
+ * for  
+ *  block 2
 
-footer: test footer
+intro-3-title: title 3
+intro-3-content: |
+ Test content
+ * for  
+ *  block 3
