@@ -21,6 +21,11 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
           {{ content }}
+          <hr>
+          <!-- DISQUS -->
+          {% if page.comments %}
+            {% include disqus.html %}
+          {% endif %}
       </div>
     </div>
   </div>
