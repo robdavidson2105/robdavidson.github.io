@@ -17,7 +17,13 @@
     {% include custom_css.html %}
     {% include maths_and_code.html %}
 
-    <title>{{ site.title }}</title>
+    <title>
+      {%if page.title %}
+       {{ page.title }}
+      {% else %}
+       {{ site.title }}
+      {% endif %}
+    </title>
   </head>
   <body>
     <!-- Navigation -->

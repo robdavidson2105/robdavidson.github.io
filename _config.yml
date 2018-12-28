@@ -6,3 +6,6 @@ description: Test description
 collections:
   - roles
   - qualifications
+
+plugins: 
+  - jekyll-sitemap
