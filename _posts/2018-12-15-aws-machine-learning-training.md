@@ -19,7 +19,6 @@ If nothing else, for rusty mathematicians like me, the 'Math**s** for Machine Le
 
 Also this track includes a really good summary explanation of stochastic gradient descent and the fundamentals of linear and logistic regression.
 
-Once you've finished the grounding courses (not too onerous - you should complete them in a couple of weekends) then learning to program a chatbot is pretty cool.   Its a an eye-opener as to how evolved speech recognition and speech synthesis has become.
+Once you've finished the grounding courses (not too onerous - you should complete them in a couple of weekends) then learning to program a chatbot is pretty cool.   It's an eye-opener as to how evolved speech recognition and speech synthesis has become.
 
-I jumped over the guided lab-session and instead built a chatbot integrated with the AWS Connect call centre service ... very geeky and cool - I'll post more details about this later.
-
+I jumped over the guided lab-session and instead built a chatbot integrated with the Amazon Connect call centre service ... very geeky and cool - I'll post more details about this later.
